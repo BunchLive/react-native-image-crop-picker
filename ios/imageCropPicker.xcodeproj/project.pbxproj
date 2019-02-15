@@ -319,12 +319,17 @@
 		3400A8121CEB54A6008A0BC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/RSKImageCropper/build/Debug-iphoneos";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/RSKImageCropper/build/Debug-iphoneos",
+					"${PROJECT_DIR}/../../../iOS/Pods/RSKImageCropper",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/Image/**",
+					"${SRCROOT}/../../../iOS/Pods/RSKImageCropper",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
@@ -340,12 +345,17 @@
 		3400A8131CEB54A6008A0BC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/RSKImageCropper/build/Debug-iphoneos";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/RSKImageCropper/build/Debug-iphoneos",
+					"${PROJECT_DIR}/../../../iOS/Pods/RSKImageCropper",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/Image/**",
+					"${SRCROOT}/../../../iOS/Pods/RSKImageCropper",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
